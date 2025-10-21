@@ -1,0 +1,67 @@
+@import '/node_modules/codemirror/lib/codemirror.css';
+@import '/node_modules/codemirror/theme/material.css';
+@err-color: rgb(192, 32, 32);
+@tip-color: #7d8799;
+@log-color: #9ba7bd;
+
+.edit-title {
+  font-size: 18px;
+  color: #96a1b4;
+}
+.cm-scroller::-webkit-scrollbar {
+  background-color: rgb(167, 160, 160);
+  border-radius: 10px;
+  height: 6px;
+  padding: 0px 5px;
+}
+.cm-scroller::-webkit-scrollbar-thumb {
+  background-color: #3d434e;
+  border-radius: 10px;
+}
+
+.replaced-source-code {
+  .edit-wrapper {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #282c34;
+
+    .tip {
+      font-size: 16px;
+      color: @tip-color;
+    }
+
+    .edit-self {}
+
+    .result {
+      margin-top: 4px;
+      background-color: #404651;
+      padding: 6px 8px;
+      border-radius: 4px;
+    }
+  }
+
+
+
+  .msg-res-title,.err-res-title {
+    font-size: 16px;
+    // font-weight: bold;
+  }
+  .msg-res-title{
+    color: @log-color;
+  }
+  .err-res-title {
+    color: @err-color;
+  }
+
+
+  .log-list {
+    .log-item {
+      color: @log-color;
+      font-weight: bold;
+    }
+  }
+
+  .err-msg {
+    color: @err-color;
+  }
+}
